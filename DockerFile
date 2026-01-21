@@ -1,0 +1,17 @@
+# Use official Nginx image
+FROM nginx:alpine
+
+# Remove the default Nginx static assets
+RUN rm -rf /usr/share/nginx/html/*
+
+# Copy your frontend files to Nginx's public folder
+COPY dist/ /usr/share/nginx/html/
+
+# Expose port 80 for the container
+EXPOSE 80
+
+# Start Nginx when the container runs
+CMD ["nginx", "-g", "daemon off;"]
+# Use the default command to run Nginx
+CMD ["nginx", "-g", "daemon off;"]
+
