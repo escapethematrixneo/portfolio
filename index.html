@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Title (What shows on Google and browser tab) -->
+  <title>Saravanan | Web Developer & Storyteller Portfolio</title>
+
+  <!-- Meta Description (Google search snippet) -->
+  <meta name="description" content="I build responsive websites with smooth animations and craft YouTube scripts that connect. Let's create your story online.">
+
+  <!-- Meta Keywords (Optional, but can add) -->
+  <meta name="keywords" content="Web Developer, Portfolio, GSAP Animations, YouTube Script Writer, Saravanan, Responsive Websites">
+
+  <!-- Canonical URL (Important when you buy domain) -->
+  <link rel="canonical" href="https://ShavanXCoder.io">
+
+  <!-- Favicon (Your site icon) -->
+  <link rel="icon" href="favicon.png" type="image/png">
+
+  <!-- Open Graph Tags (For WhatsApp, LinkedIn, etc. previews) -->
+  <meta property="og:title" content="Saravanan | Web Developer Portfolio">
+  <meta property="og:description" content="I build smooth, modern websites and write powerful YouTube scripts.">
+  <meta property="og:image" content="https://saravananofficialportfolio.netlify.app/preview.jpg"> <!-- Replace with your actual preview image URL -->
+  <meta property="og:url" content="https://ShavanXCoder.io">
+  <meta property="og:type" content="website">
+
+  <!-- Twitter Card (For Twitter preview) -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Saravanan | Web Developer Portfolio">
+  <meta name="twitter:description" content="Crafting websites and stories with impact.">
+  <meta name="twitter:image" content="https://saravananofficialportfolio.netlify.app/preview.jpg"> <!-- Replace with your actual preview image URL -->
+
+  <!-- CSS Link (Already in your project) -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- GSAP and other JS libraries here -->
+</head>
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="icon" href="logo2.jpg" type="image/x-icon" />
+
+  <!-- Fonts and Icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet"/>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollToPlugin.min.js"></script>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2.6.4/dist/email.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollSmoother.min.js"></script>
+
+<script>
+  (function(){
+    emailjs.init("SARAVANAN"); // Replace with your EmailJS user ID
+  })();
+</script>
+<script>
+  document.getElementById("contact-form").addEventListener("submit", function(e) {
+    e.preventDefault();
+    emailjs.sendForm("service_j84om7l", this)
+      .then(() => alert("Message sent successfully!"))
+      .catch(err => alert("Failed to send message: " + err));
+  });
+</script>
+
+
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css"/>
+
+  <!-- JS -->
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+<!-- Splash Screen -->
+<div id="splash-screen">
+  <img src="logo2.jpg" alt="Logo" class="splash-logo" />
+  <h1 class="splash-title">Welcome to ShavanxCoder</h1>
+<p class="splash-desc">Building Elegant, Impactful Web Solutions.</p>
+</div>
+
+
+  <!-- The rest of your content... -->
+
+  <div id="smooth-wrapper">
+    <div id="smooth-content">
+      <!-- Background Video -->
+      <section class="video-bg" id="vanta-bg">
+        <div class="video-overlay"></div>
+      <video class="video-bg" autoplay muted loop playsinline>
+        <source src="back 2.mp4" type="video/mp4">
+      </video>
+      </section>
+
+<!-- Mobile Background Video -->
+<video id="mobileVideo" autoplay muted loop playsinline class="mobile-bg-video">
+  <source src="blurry.png" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
+
+      <!-- Navigation -->
+      <nav class="navbar">
+        <div class="nav-left">
+          <a href="about.html">About</a>
+          <a href="#contact">Contact</a>
+        </div>
+
+        <div class="nav-center">
+          <span class="name">Saravanan.</span>
+        </div>
+
+        <div class="nav-right">
+          <button class="menu-toggle" id="menuToggle">Menu +</button>
+          <div class="dropdown-content" id="menuDropdown">
+            <a href="index.html">Home</a>
+            <a href="webser.html">Web Services</a>
+            <a href="casestud.html">Case Studies</a>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Morph Text Centered -->
+      <div class="center-morph">
+        <div class="morph-container" id="morph-text"></div>
+      </div>
+
+      <!-- Scroll Down Arrow -->
+    <button class="scroll-arrow" onclick="scrollToSection()" aria-label="Scroll to next section">
+      <span>↓</span>
+    </button>
+
+
+      <!-- Custom Cursor -->
+      <div class="cursor" id="cursor"></div>
+
+      <section class="showcase" id="showcase">
+        <div class="container grid">
+          <div class="showcase-img">
+            <img src="projimg2.jpg" alt="">
+          </div>
+          <div class="showcase-text">
+            <h1><pre>
+Websites that work and Speak
+your Message and inspire your
+people.
+            </pre>
+            </h1>
+            <p>
+  🔸I don’t just build websites — I craft narratives. From clean, responsive web<br>
+  sites to compelling YouTube scripts and organic storylines, I help creators<br>
+  and businesses express their message with clarity and impact.
+            </p>
+             <p>
+  🔸I've worked with content creators, startups, and solo entrepreneurs to design <br>
+    website and to write scripts that truly connect with audiences.</p>
+            <p>
+  🔸My approach blends clean code with creative thinking and storytelling with<br>
+    strategy. As a result, your website will speak with purpose and content that resonate.
+            </p>
+            <p><b>
+        Let's build something that feels like you and works like a charm.
+           </b> </p>
+            <a href="#contact" class="talk-btn">Let's Connect &rarr;</a>
+
+        </div>
+      </section>
+
+      <section>
+        <div class="icons">
+          <div class="icons-slide">
+            <img src="icons/icons1/css-3 (1).png" alt="">
+            <img src="icons/icons1/html (3).png (2).png" alt="">
+            <img src="icons/icons1/java-logo.png" alt="">
+            <img src="icons/icons1/java-script.png (1).png" alt="">
+            <img src="icons/icons1/mongodb.jpg" alt="">
+            <img src="icons/icons1/library (1).png (1).png" alt="">
+            <img src="icons/icons1/spring-boot.svg" alt="">
+            <img src="icons/icons1/database-sql.svg" alt="">
+            <img src="icons/icons1/vs.png" alt="">
+            <img src="icons/icons1/web-design.png" alt="">
+            <img src="icons/icons1/cloud-api.png" alt="">
+            <img src="icons/icons1/github (1).png" alt="">
+            <img src="icons/icons1/saas.png" alt="">
+            <img src="icons/icons1/social.png" alt="">
+          </div>
+          <div class="icons-slide">
+            <img src="icons/icons1/css-3 (1).png" alt="">
+            <img src="icons/icons1/html (3).png (2).png" alt="">
+            <img src="icons/icons1/java-logo.png" alt="">
+            <img src="icons/icons1/java-script.png (1).png" alt="">
+            <img src="icons/icons1/mongodb.jpg" alt="">
+            <img src="icons/icons1/library (1).png (1).png" alt="">
+            <img src="icons/icons1/spring-boot.svg" alt="">
+            <img src="icons/icons1/database-sql.svg" alt="">
+            <img src="icons/icons1/vs.png" alt="">
+            <img src="icons/icons1/web-design.png" alt="">
+            <img src="icons/icons1/cloud-api.png" alt="">
+            <img src="icons/icons1/github (1).png" alt="">
+            <img src="icons/icons1/saas.png" alt="">
+            <img src="icons/icons1/social.png" alt="">
+          <!-- repeat the same images here for seamless loop -->
+        </div>
+     </div>
+
+
+      </section>
+
+    <section class="review">
+    <div class="review-flex">
+      <div class="review-left">
+        <h1><span class="dot"></span> Review your content</h1>
+      </div>
+      <div class="review-right">
+        <h2>Refine your Message, Elevate your Presence</h2>
+        <p>🔸Crafting a strong online presence is a delicate balance — especially when your ideas are complex and your audience diverse. That's where I come in.</p>
+        <p>🔸Whether it's building a clean, responsive website or editing your message for clarity and impact, I help turn raw ideas into clear, engaging digital content.</p>
+        <p>🔸From personal portfolios to creator-driven scripts and client-facing pages, I focus on structure, clean code, storytelling, and audience psychology — ensuring your content connects the right way, with the right people.</p>
+        <p><b>Let's make every word — and every pixel — count.</b></p>
+      </div>
+     <a href="webser.html" class="web-btn">Explore Web Services &rarr;</a>
+
+    </div>
+
+    </section>
+    <script>
+      // Register the ScrollTrigger plugin
+      gsap.registerPlugin(ScrollTrigger);
+
+      // Animate each paragraph in .review-right
+      gsap.utils.toArray(".review-right p").forEach((para, i) => {
+        gsap.from(para, {
+          scrollTrigger: {
+            trigger: para,
+            start: "top 80%", // when paragraph enters viewport
+            toggleActions: "play none none reverse",
+          },
+          opacity: 0,
+          y: 30,
+          duration: 0.8,
+          ease: "power3.out",
+          delay: i * 0.1 // slight stagger
+        });
+      });
+    </script>
+<section class="img animate-zoom">
+  <div class="projimg animate-zoom">
+    <video src="video7.mp4" autoplay muted loop playsinline style="width:100%;height:auto;max-width:100%;border-radius:16px;">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+</section>
+
+<section class="contact-section" id="contact">
+  <div class="contact-header">
+    <h2>Let’s work together to lift your content<br>and inspire your people.</h2>
+    <p>Please get in touch.<br>
+      Send us a message here, <a href="mailto:bsaravanan2511@gmail.com">email</a> or <a href="tel:+916381568894">call us</a>.
+    </p>
+  </div>
+
+  <!-- FIX: One single form tag -->
+  <form class="contact-form" id="contact-form">
+    <div class="form-group half">
+      <label for="firstName">First name</label>
+      <input type="text" id="firstName" name="firstName" placeholder="Saravanan" required>
+    </div>
+
+    <div class="form-group half">
+      <label for="lastName">Last name</label>
+      <input type="text" id="lastName" name="lastName" placeholder="B" required>
+    </div>
+
+    <div class="form-group full">
+      <label for="email">Email address</label>
+      <input type="email" id="email" name="email" placeholder="youremail@gmail.com" required>
+    </div>
+
+    <div class="form-group full">
+      <label for="message">Message</label>
+      <textarea id="message" name="message" placeholder="Tell us briefly about your project..." required></textarea>
+    </div>
+
+    <div class="form-group checkbox">
+      <input type="checkbox" id="privacy" required>
+      <label for="privacy">I have read and agree to the <a href="#">Privacy Policy</a></label>
+    </div>
+
+    <button type="submit" class="send-btn">Send <span>&rarr;</span></button>
+  </form>
+</section>
+
+
+
+      <!-- GSAP CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+    <script>
+      gsap.registerPlugin(ScrollTrigger);
+
+      gsap.utils.toArray("form input, form textarea, form button").forEach((el, i) => {
+        gsap.from(el, {
+          opacity: 0,
+          y: 30,
+          duration: 0.8,
+          delay: i * 0.1,
+          scrollTrigger: {
+            trigger: el,
+            start: "top 90%",
+          },
+        });
+      });
+    </script>
+
+    </section>
+
+    <footer style="background-color: #f8f589; font-family: 'Instrument Serif', serif; padding: 4rem 2rem; color: #222;">
+      <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-start; gap: 2rem;">
+        <div style="flex: 1 1 55%; max-width: 600px; font-size: 1.4rem; line-height: 1.6;">
+          <p>
+            As a creator based in India, I respectfully honor the Traditional Custodians of this land and their Elders — past, present, and future. I recognize their deep connection to land, culture, and community.
+          </p>
+        </div>
+        <div style="flex: 1 1 35%; max-width: 300px; font-size: 1rem; line-height: 2;">
+          <p><a href="mailto:bsaravanan2511@gmail.com" style="color: #222; text-decoration: none;">official@bsaravanan</a></p>
+          <p>+91 63815 68894</p>
+          <p>West Tambaram, Chennai<br>TamilNadu, India</p>
+          <p>Connect with me
+            <a href="https://www.linkedin.com/in/saravanan-b-314897305?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" style="display: inline-block; margin-left: 0.5rem;"><img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" alt="LinkedIn" style="height: 24px;"></a>
+          <a href="https://github.com/escapethematrixneo" style="display: inline-block; margin-left: 0.5rem;">
+      <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub" style="height: 24px;">
+    </a>
+    <a href="https://www.instagram.com/shavanxcoder.io" style="display: inline-block; margin-left: 0.5rem;">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram" style="height: 24px;">
+</a>
+<a href="https://youtube.com/@saravananofficialmedia?feature=shared" target="_blank">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/7/75/YouTube_social_white_squircle_%282017%29.svg" alt="YouTube" style="height: 24px;">
+</a>
+
+
+
+            </p>
+        </div>
+      </div>
+
+      <hr style="margin: 3rem 0; border: none; border-top: 1px solid #222;">
+
+      <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; font-size: 1rem;">
+        <div style="display: flex; gap: 1.5rem;">
+          <a href="privacy.html" style="color: #222; text-decoration: none;">Privacy Statement</a>
+          <a href="cookies.html" style="color: #222; text-decoration: none;">Cookie Policy</a>
+          <a href="disc.html" style="color: #222; text-decoration: none;">Disclaimer</a>
+        </div>
+        <div style="margin-top: 1rem; font-size: 1rem" >
+          &copy; 2025 Saravanan B
+        </div>
+        <div style="margin-top: 1rem;">
+          Created by <strong style="font-family: 'Times New Roman', serif;">Saravanan.</strong>
+        </div>
+      </div>
+    </footer>
+
+    <!-- GSAP Core -->
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.2/dist/gsap.min.js"></script>
+<!-- ScrollTrigger -->
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.2/dist/ScrollTrigger.min.js"></script>
+<!-- ScrollSmoother (for fluid scroll feel) -->
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.2/dist/ScrollSmoother.min.js"></script>
+
+<script>
+  gsap.registerPlugin(ScrollSmoother);
+ScrollSmoother.create({
+  wrapper: "#smooth-wrapper",
+  content: "#smooth-content",
+  smooth: 1.5,
+  effects: true
+});
+
+
+  // Reveal animation for elements with .reveal class
+  gsap.utils.toArray(".reveal").forEach((elem) => {
+    gsap.from(elem, {
+      scrollTrigger: {
+        trigger: elem,
+        start: "top 85%",
+        toggleActions: "play none none none",
+      },
+      opacity: 0,
+      y: 50,
+      duration: 1.2,
+      ease: "power3.out",
+      stagger: 0.15
+    });
+  });
+</script>
+
+<!-- Lenis Smooth Scroll Library -->
+<script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.38/bundled/lenis.min.js"></script>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+<script>
+  const lenis = new Lenis({
+    duration: 4, // adjust this for slower or faster scroll
+    easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+    smoothWheel: true,
+    smoothTouch: false
+  });
+
+  function raf(time) {
+    lenis.raf(time);
+    requestAnimationFrame(raf);
+  }
+
+  requestAnimationFrame(raf);
+</script>
+
+<!-- Cookie Banner -->
+<div class="cookie-banner" id="cookie-banner">
+  <p>We care about your data, and we will only use cookies to improve your experience. By using this website, you agree to the storing of cookies on your device.</p>
+  <div class="cookie-buttons">
+    <button id="accept-cookies">Accept &rarr;</button>
+    <button id="decline-cookies">Decline</button>
+    <a href="cookies.html" class="cookie-learn" style="color: #222; text-decoration: none;">Learn More &rarr;</a>
+  </div>
+</div>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const cookieBanner = document.getElementById('cookie-banner');
+  const acceptCookies = document.getElementById('accept-cookies');
+  const declineCookies = document.getElementById('decline-cookies');
+
+  if (!cookieBanner || !acceptCookies || !declineCookies) return;
+
+  // Show banner only if cookie not set
+  if (!localStorage.getItem('cookieConsent')) {
+    cookieBanner.classList.remove('hidden');
+  } else {
+    cookieBanner.classList.add('hidden');
+  }
+
+  acceptCookies.addEventListener('click', () => {
+    localStorage.setItem('cookieConsent', 'accepted');
+    cookieBanner.classList.add('hidden');
+  });
+
+  declineCookies.addEventListener('click', () => {
+    localStorage.setItem('cookieConsent', 'declined');
+    cookieBanner.classList.add('hidden');
+  });
+});
+</script>
+
+  </div>
+
+
+
+
+
+
+
+</body>
+</html>
+

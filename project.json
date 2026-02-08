@@ -1,0 +1,25 @@
+{
+  "name": "saravanan-portfolio",
+  "version": "1.0.0",
+  "description": "Personal portfolio website for Saravanan, featuring smooth scroll, GSAP animations, Vanta background, and contact form.",
+  "main": "index.html",
+  "scripts": {
+    "start": "live-server ."
+  },
+  "author": "Saravanan B",
+  "license": "MIT",
+  "dependencies": {
+    "gsap": "^3.12.2",
+    "emailjs-com": "^2.6.4"
+  },
+  "devDependencies": {},
+  "keywords": [
+    "portfolio",
+    "web",
+    "gsap",
+    "vanta",
+    "html",
+    "css",
+    "javascript"
+  ]
+}
